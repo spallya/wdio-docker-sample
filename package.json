@@ -1,0 +1,21 @@
+{
+    "name": "wdio-docker",
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "wdio",
+        "test:docker": "sudo docker-compose up --build --abort-on-container-exit",
+        "wdio": "wdio run wdio.conf.js"
+    },
+    "keywords": [],
+    "author": "Promenade Group",
+    "license": "Apache 2.0",
+    "devDependencies": {
+        "@wdio/cli": "^8.5.6",
+        "@wdio/local-runner": "^8.5.6",
+        "@wdio/mocha-framework": "^8.5.6",
+        "@wdio/spec-reporter": "^8.4.0",
+        "wdio-docker-service": "^3.2.1"
+    }
+}
